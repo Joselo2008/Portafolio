@@ -1,0 +1,146 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(150, 59, 59);
+    color: rgb(230, 249, 249);
+    margin: 0;
+    
+}
+h1, h2, h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 700;
+}
+header {
+    background-color: rgb(219, 211, 177);
+    color: rgb(0, 82, 82);
+    padding: 18px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+header h1 {
+    margin: 0;
+    color: rgb(201, 156, 98);
+}
+.foto {
+    max-width: 140px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 12px auto;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(231, 207, 173);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 18px;
+    background-color: rgb(111, 96, 77);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}   
+
+nav a:hover {
+    background-color: rgb(170, 147, 13);
+    color: rgb(41, 59, 53);
+}
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+section{
+    padding: 20px;
+    margin: 16px 0;
+}
+section h2 {
+    color: rgb(224, 165, 81);
+}
+.centrado {
+    text-align: center;
+}
+#proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding-left: 0;
+    padding-right: 0;
+}
+#proyectos h2 {
+    grid-column: 1/-1;
+}
+.items img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.tarjeta {
+    background-color: rgb(213, 188, 158);
+    color: rgb(96, 72, 11);
+    border: 1px solid rgb(81, 49, 13);
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 11px rgb(28, 27, 27);
+    transition: transform 0.5s ease;
+}
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px 0 gold;
+}
+.tarjeta img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.tarjeta h3 {
+    color: rgb(157, 117, 16);
+    margin: 8px 0 4px 0;
+}
+.tarjeta p {
+    color: rgb(99, 63, 9);
+    font-size: 15px;
+    margin: 0 0 12px 0;
+}
+.boton {
+    display: inline-block;
+    background-color: rgb(111, 96, 77);
+    color: rgb(231, 207, 173);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold
+}
+.boton:hover {
+    background-color: rgb(193, 143, 17);
+}
+.items2 {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin-top: 12px;
+}    
+.items2 li {
+    background-color: rgb(84, 64, 12);
+    border: 1px solid rgb(220, 179, 77);
+    color: rgb(154, 141, 67);
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 22px;
+}
+footer {
+    background-color: rgb(51, 39, 7);
+    color: rgb(234, 228, 216);
+    padding:  20px;
+    text-align: center;
+    margin-top: 25px;
+}
